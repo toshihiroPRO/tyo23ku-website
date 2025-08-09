@@ -388,7 +388,7 @@ function App() {
                     alt={member.name}
                     className="w-full h-32 object-cover rounded-lg mb-3"
                   />
-                  <h3 className="text-white font-bold text-sm text-center">{member.ward}</h3>
+                  <h3 className="text-black font-bold text-sm text-center">{member.ward}</h3>
                   <p className="text-gray-300 text-xs text-center">{member.name}</p>
                 </CardContent>
               </Card>
