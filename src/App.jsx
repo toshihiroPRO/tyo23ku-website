@@ -296,25 +296,22 @@ function App() {
   return (
     <div className="min-h-screen gradient-bg tokyo-skyline">
       {/* Header */}
-      <header className="bg-black/80 backdrop-blur-md border-b border-cyan-500/30 sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
-          <nav className="flex items-center justify-between">
-            <div className="flex items-center space-x-4">
-              <img src={logoImage} alt="TYO23Ku Logo" className="h-12 floating-animation" />
-            </div>
-            <div className="hidden md:flex space-x-6">
-              <a href="#home" className="text-white hover:text-cyan-400 transition-colors">ホーム</a>
-              <a href="#members" className="text-white hover:text-cyan-400 transition-colors">メンバー</a>
-              <a href="#news" className="text-white hover:text-cyan-400 transition-colors">ニュース</a>
-              <a href="#schedule" className="text-white hover:text-cyan-400 transition-colors">スケジュール</a>
-              <a href="#goods" className="text-white hover:text-cyan-400 transition-colors">グッズ</a>
+      <header className="fixed top-0 left-0 right-0 z-40 bg-black/70 backdrop-blur-sm border-b border-cyan-500/30">
+        <div className="container mx-auto px-4">
+          <nav className="flex justify-center py-4">
+            <div className="flex space-x-8">
+              <a href="#home" className="text-white hover:text-cyan-400 transition-colors font-medium bg-black/50 px-3 py-2 rounded-lg border border-cyan-500/30">ホーム</a>
+              <a href="#members" className="text-white hover:text-cyan-400 transition-colors font-medium bg-black/50 px-3 py-2 rounded-lg border border-cyan-500/30">メンバー</a>
+              <a href="#news" className="text-white hover:text-cyan-400 transition-colors font-medium bg-black/50 px-3 py-2 rounded-lg border border-cyan-500/30">ニュース</a>
+              <a href="#schedule" className="text-white hover:text-cyan-400 transition-colors font-medium bg-black/50 px-3 py-2 rounded-lg border border-cyan-500/30">スケジュール</a>
+              <a href="#goods" className="text-white hover:text-cyan-400 transition-colors font-medium bg-black/50 px-3 py-2 rounded-lg border border-cyan-500/30">グッズ</a>
             </div>
           </nav>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section id="home" className="relative py-20 text-center overflow-hidden">
+      <section id="home" className="relative pt-16 pb-20 text-center overflow-hidden">
         {/* Video Background */}
         <video 
           autoPlay 
@@ -389,7 +386,7 @@ function App() {
                     className="w-full h-32 object-cover rounded-lg mb-3"
                   />
                   <h3 className="text-black font-bold text-sm text-center">{member.ward}</h3>
-                  <p className="text-gray-300 text-xs text-center">{member.name}</p>
+                  <p className="text-gray-600 text-xs text-center">{member.name}</p>
                 </CardContent>
               </Card>
             ))}
