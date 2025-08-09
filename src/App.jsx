@@ -485,7 +485,7 @@ function App() {
       <footer className="bg-black/90 border-t border-cyan-500/30 py-8">
         <div className="container mx-auto px-4 text-center">
           <img src={logoImage} alt="TYO23Ku" className="mx-auto h-16 mb-4 opacity-80" />
-          <p className="text-gray-400 mb-4">© 2025 TYO23Ku. All rights reserved.</p>
+          <p className="text-gray-400 mb-4">© ChantoGPT / ToshiPro　All rights reserved.</p>
           <div className="flex justify-center space-x-6">
             <a href="https://www.instagram.com/tokyo23ku_ojisan" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition-colors"><Instagram size={24} /></a>
             <a href="https://www.tiktok.com/@miguel_187c" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition-colors"><Music size={24} /></a>
