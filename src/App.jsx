@@ -298,14 +298,14 @@ function App() {
     <div className="min-h-screen gradient-bg tokyo-skyline">
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-40">
-        <div className="container mx-auto px-4">
-          <nav className="flex justify-center py-4">
-            <div className="flex space-x-8">
-              <a href="#home" className="text-white hover:text-cyan-400 transition-colors font-medium bg-black/50 px-3 py-2 rounded-lg border border-cyan-500/30">ホーム</a>
-              <a href="#members" className="text-white hover:text-cyan-400 transition-colors font-medium bg-black/50 px-3 py-2 rounded-lg border border-cyan-500/30">メンバー</a>
-              <a href="#news" className="text-white hover:text-cyan-400 transition-colors font-medium bg-black/50 px-3 py-2 rounded-lg border border-cyan-500/30">ニュース</a>
-              <a href="#schedule" className="text-white hover:text-cyan-400 transition-colors font-medium bg-black/50 px-3 py-2 rounded-lg border border-cyan-500/30">スケジュール</a>
-              <a href="#goods" className="text-white hover:text-cyan-400 transition-colors font-medium bg-black/50 px-3 py-2 rounded-lg border border-cyan-500/30">グッズ</a>
+        <div className="container mx-auto px-2">
+          <nav className="flex justify-center py-2">
+            <div className="flex space-x-1 sm:space-x-4 md:space-x-8 overflow-x-auto">
+              <a href="#home" className="text-white hover:text-cyan-400 transition-colors font-medium bg-black/50 px-2 py-2 rounded-lg border border-cyan-500/30 text-xs sm:text-sm whitespace-nowrap">ホーム</a>
+              <a href="#members" className="text-white hover:text-cyan-400 transition-colors font-medium bg-black/50 px-2 py-2 rounded-lg border border-cyan-500/30 text-xs sm:text-sm whitespace-nowrap">メンバー</a>
+              <a href="#news" className="text-white hover:text-cyan-400 transition-colors font-medium bg-black/50 px-2 py-2 rounded-lg border border-cyan-500/30 text-xs sm:text-sm whitespace-nowrap">ニュース</a>
+              <a href="#schedule" className="text-white hover:text-cyan-400 transition-colors font-medium bg-black/50 px-2 py-2 rounded-lg border border-cyan-500/30 text-xs sm:text-sm whitespace-nowrap">スケジュール</a>
+              <a href="#goods" className="text-white hover:text-cyan-400 transition-colors font-medium bg-black/50 px-2 py-2 rounded-lg border border-cyan-500/30 text-xs sm:text-sm whitespace-nowrap">グッズ</a>
             </div>
           </nav>
         </div>
@@ -330,7 +330,7 @@ function App() {
         {/* Content */}
         <div className="container mx-auto px-4 relative z-20 pt-20">
           <div className="mb-8">
-            <img src={newLogoImage} alt="TYO23Ku" className="mx-auto h-40 mb-6 floating-animation" />
+            <img src={newLogoImage} alt="TYO23Ku" className="mx-auto h-24 mb-6 floating-animation" />
             <h1 className="text-6xl font-bold text-white neon-text mb-4">TYO23Ku</h1>
             <p className="text-2xl text-pink-400 pulse-glow mb-4">推しオジさがし</p>
             <p className="text-sm text-gray-300 max-w-2xl mx-auto mb-8">
