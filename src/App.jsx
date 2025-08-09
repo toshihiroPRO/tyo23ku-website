@@ -6,8 +6,9 @@ import { Badge } from './components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './components/ui/tabs';
 import { Star, Heart, MapPin, Calendar, Users, Music, Instagram, MessageSquare } from 'lucide-react';
 
-// Import images
+// Import images and video
 import logoImage from './assets/TOKYO23Ku_LOGO.png';
+import tokyoHighwayVideo from './assets/tokyo_highway.mp4';
 import adachiImage from './assets/ADACHI.png';
 import arakawaImage from './assets/ARAKAWA.png';
 import bunkyoImage from './assets/BUNKYO.png';
@@ -290,9 +291,23 @@ function App() {
       </header>
 
       {/* Hero Section */}
-      <section id="home" className="relative py-20 text-center">
-        <div className="hero-section-background"></div>
-        <div className="container mx-auto px-4">
+      <section id="home" className="relative py-20 text-center overflow-hidden">
+        {/* Video Background */}
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline
+          className="absolute top-0 left-0 w-full h-full object-cover z-0"
+        >
+          <source src={tokyoHighwayVideo} type="video/mp4" />
+        </video>
+        
+        {/* Dark overlay for better text readability */}
+        <div className="absolute top-0 left-0 w-full h-full bg-black/60 z-10"></div>
+        
+        {/* Content */}
+        <div className="container mx-auto px-4 relative z-20">
           <div className="mb-8">
             <img src={logoImage} alt="TYO23Ku" className="mx-auto h-32 mb-6 floating-animation" />
             <h1 className="text-6xl font-bold text-white neon-text mb-4">TYO23Ku</h1>
