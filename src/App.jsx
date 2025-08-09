@@ -8,6 +8,7 @@ import { Star, Heart, MapPin, Calendar, Users, Music, Instagram, MessageSquare }
 
 // Import images and video
 import logoImage from './assets/TOKYO23Ku_LOGO.png';
+import newLogoImage from './assets/TOKYO23Ku_LOGO_NEW.png';
 import tokyoHighwayVideo from './assets/tokyo_highway.mp4';
 import adachiImage from './assets/ADACHI.png';
 import arakawaImage from './assets/ARAKAWA.png';
@@ -296,7 +297,7 @@ function App() {
   return (
     <div className="min-h-screen gradient-bg tokyo-skyline">
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-40 bg-black/70 backdrop-blur-sm border-b border-cyan-500/30">
+      <header className="fixed top-0 left-0 right-0 z-40">
         <div className="container mx-auto px-4">
           <nav className="flex justify-center py-4">
             <div className="flex space-x-8">
@@ -311,7 +312,7 @@ function App() {
       </header>
 
       {/* Hero Section */}
-      <section id="home" className="relative pt-16 pb-20 text-center overflow-hidden">
+      <section id="home" className="relative text-center overflow-hidden">
         {/* Video Background */}
         <video 
           autoPlay 
@@ -327,14 +328,14 @@ function App() {
         <div className="absolute top-0 left-0 w-full h-full bg-black/60 z-10"></div>
         
         {/* Content */}
-        <div className="container mx-auto px-4 relative z-20">
+        <div className="container mx-auto px-4 relative z-20 pt-20">
           <div className="mb-8">
-            <img src={logoImage} alt="TYO23Ku" className="mx-auto h-32 mb-6 floating-animation" />
+            <img src={newLogoImage} alt="TYO23Ku" className="mx-auto h-40 mb-6 floating-animation" />
             <h1 className="text-6xl font-bold text-white neon-text mb-4">TYO23Ku</h1>
-            <p className="text-2xl text-pink-400 pulse-glow mb-8">推しオジさがし</p>
-            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-              東京23区から集結した、個性豊かなおじさんアイドルグループ。
-              それぞれの区の魅力と共に、あなたの心を温めます。
+            <p className="text-2xl text-pink-400 pulse-glow mb-4">推しオジさがし</p>
+            <p className="text-sm text-gray-300 max-w-2xl mx-auto mb-8">
+              人間が考えて書き✍️AIが描いた🎨<br />
+              東京23区🗼に居そうで絶対いない『妄想おじさん』たち
             </p>
           </div>
           <Button 
