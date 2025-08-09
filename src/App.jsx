@@ -237,6 +237,24 @@ const news = [
     date: '2025.08.07',
     title: 'メンバー全員のプロフィール動画公開開始',
     category: 'メディア'
+  },
+  {
+    id: 4,
+    date: '2025.08.06',
+    title: '新宿区おじさん、TBS系ドラマ「サラリーマンの恋」に出演決定！',
+    category: 'メディア出演'
+  },
+  {
+    id: 5,
+    date: '2025.08.05',
+    title: '渋谷区おじさん初写真集「若者気取りの365日」発売決定',
+    category: 'リリース情報'
+  },
+  {
+    id: 6,
+    date: '2025.08.04',
+    title: '港区おじさん、バラエティ番組「夜更かしセレブ」レギュラー出演開始',
+    category: 'メディア出演'
   }
 ];
 
@@ -273,6 +291,7 @@ function App() {
 
       {/* Hero Section */}
       <section id="home" className="relative py-20 text-center">
+        <div className="hero-section-background"></div>
         <div className="container mx-auto px-4">
           <div className="mb-8">
             <img src={logoImage} alt="TYO23Ku" className="mx-auto h-32 mb-6 floating-animation" />
@@ -283,7 +302,10 @@ function App() {
               それぞれの区の魅力と共に、あなたの心を温めます。
             </p>
           </div>
-          <Button className="bg-cyan-500 hover:bg-cyan-600 text-black font-bold px-8 py-3 rounded-full neon-border">
+          <Button 
+            className="bg-cyan-500 hover:bg-cyan-600 text-black font-bold px-8 py-3 rounded-full neon-border"
+            onClick={() => document.getElementById("members").scrollIntoView({ behavior: "smooth" })}
+          >
             メンバーを見る
           </Button>
         </div>
@@ -293,7 +315,7 @@ function App() {
       <section id="news" className="py-16 bg-black/50">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center text-white neon-text mb-12">ニュース</h2>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {news.map((item) => (
               <Card key={item.id} className="member-card border-cyan-500/30">
                 <CardHeader>
@@ -303,7 +325,7 @@ function App() {
                     </Badge>
                     <span className="text-sm text-gray-400">{item.date}</span>
                   </div>
-                  <CardTitle className="text-white">{item.title}</CardTitle>
+                  <CardTitle className="text-white text-sm leading-relaxed">{item.title}</CardTitle>
                 </CardHeader>
               </Card>
             ))}
