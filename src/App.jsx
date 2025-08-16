@@ -24,7 +24,7 @@ import meguroImage from './assets/MEGURO.png';
 import minatoImage from './assets/MINATO.png';
 import nakanoImage from './assets/NAKANO.png';
 import nerimaImage from './assets/NERIMA.png';
-import otaImage from './assets/OTA.png';
+import otaImage from './assets/OHTA.png';
 import setagayaImage from './assets/SETAGAYA.png';
 import shibuyaImage from './assets/SHIBUYA.png';
 import shinagawaImage from './assets/SHINAGAWA.png';
