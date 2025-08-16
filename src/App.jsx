@@ -41,6 +41,7 @@ const members = [
     ward: '足立区',
     image: adachiImage,
     catchphrase: '目ヂカラ強めで挨拶マジメ涙もろめな足立区おじさんです！',
+    holiday: '荒川河川敷でスクワット。長時間ダンスの体力作り。',
     color: '#FF6B6B'
   },
   {
@@ -49,6 +50,7 @@ const members = [
     ward: '荒川区',
     image: arakawaImage,
     catchphrase: '恋するボタン、外れてない？日暮里繊維街の裁縫男子 荒川区おじさんです！',
+    holiday: '日暮里繊維街でハンドメイド服作り。ハンドクラフト教室も。',
     color: '#4ECDC4'
   },
   {
@@ -57,6 +59,7 @@ const members = [
     ward: '文京区',
     image: bunkyoImage,
     catchphrase: 'カンディンスキーは読めてもキミのスキは読めません 文京区おじさんです！',
+    holiday: '古書店巡り＆ミュージアムカフェでまったり。',
     color: '#45B7D1'
   },
   {
@@ -65,6 +68,7 @@ const members = [
     ward: '千代田区',
     image: chiyodaImage,
     catchphrase: '法案よりもキミへの気持ちを通したい！千代田区おじさんです！',
+    holiday: '皇居ラン＆丸の内カフェ巡り。政治書で世界情勢研究',
     color: '#96CEB4'
   },
   {
@@ -73,6 +77,7 @@ const members = [
     ward: '中央区',
     image: chuoImage,
     catchphrase: 'スーツとワインと大人の余裕。今夜も銀座で"中央突破"中央区おじさんです！',
+    holiday: '銀座でワインとスイーツの食べ歩き。築地で朝ごはんデート。',
     color: '#FFEAA7'
   },
   {
@@ -81,6 +86,7 @@ const members = [
     ward: '江戸川区',
     image: edogawaImage,
     catchphrase: '走る愛のフルマラソン　胸アツ熱中症に気をつけて！江戸川区おじさんです！',
+    holiday: '河川敷ランニング。船堀タワーから夜景鑑賞。',
     color: '#74B9FF'
   },
   {
@@ -89,6 +95,7 @@ const members = [
     ward: '板橋区',
     image: itabashiImage,
     catchphrase: '揚げたてアゲだよ　恋にコロッと落としてあげる！板橋区おじさんです！',
+    holiday: 'コロッケをカリカリにする研究。洋食屋さん巡り',
     color: '#55A3FF'
   },
   {
@@ -97,6 +104,7 @@ const members = [
     ward: '葛飾区',
     image: katsushikaImage,
     catchphrase: '女にゃ弱いが義理と涙にゃもっと弱い　こち恋トラベル葛飾区おじさんです！',
+    holiday: '24時間こち亀を読むか24時間、寅さんを観ていたい。',
     color: '#FD79A8'
   },
   {
@@ -105,6 +113,7 @@ const members = [
     ward: '北区',
     image: kitaImage,
     catchphrase: '羽伸ばし、おいでよ赤羽、チルチル充ちる幸せナイト北区おじさんです！',
+    holiday: '赤羽OK横丁の立ち飲みツアー。荒川土手で夕日を眺める。',
     color: '#FDCB6E'
   },
   {
@@ -113,6 +122,7 @@ const members = [
     ward: '江東区',
     image: kotoImage,
     catchphrase: '住まいと年収High階層、だけど物腰低階層！江東区おじさんです！',
+    holiday: 'バルコニーでホームパーティー。湾岸エリアでSUP体験。',
     color: '#6C5CE7'
   },
   {
@@ -121,6 +131,7 @@ const members = [
     ward: '目黒区',
     image: meguroImage,
     catchphrase: '恋もパーマも時かけて!キミと一緒にヴィンテージ目黒区おじさんです！',
+    holiday: 'インテリアショップ巡り＆お気に入りカフェで音楽鑑賞。',
     color: '#A29BFE'
   },
   {
@@ -129,6 +140,7 @@ const members = [
     ward: '港区',
     image: minatoImage,
     catchphrase: '甘い泡と淡い恋あまねくキミにも飲ませたい港区おじさんです！',
+    holiday: '夜景クルーズ＆シャンパン。夜は BARのGENIE通い。',
     color: '#FD79A8'
   },
   {
@@ -137,6 +149,7 @@ const members = [
     ward: '中野区',
     image: nakanoImage,
     catchphrase: '恋の香りをブレンド中　君の魅力をハンドドリップ中野区おじさんです！',
+    holiday: 'ドリップコーヒー研究のため喫茶店巡り。古道具屋も好き。',
     color: '#00B894'
   },
   {
@@ -145,15 +158,17 @@ const members = [
     ward: '練馬区',
     image: nerimaImage,
     catchphrase: '団地の男子、恋を肥やして　愛も野菜も育てちゃう練馬区おじさんです！',
-    color: '#00CEC9'
+    holiday: '農園カフェで野菜たっぷりランチ。園芸店巡りも',
+    color: '#E17055'
   },
   {
-    id: 'ohta',
+    id: 'ota',
     name: '大田区おじさん',
     ward: '大田区',
     image: otaImage,
     catchphrase: 'オイルの香りも媚薬の香りに　職人プリンス大田区おじさんです！',
-    color: '#E17055'
+    holiday: '羽田空港で飛行機撮影。温泉スパでまったり休日。',
+    color: '#00CEC9'
   },
   {
     id: 'setagaya',
@@ -161,6 +176,7 @@ const members = [
     ward: '世田谷区',
     image: setagayaImage,
     catchphrase: '恋のバグ、ハグしてはぐくみハッキング！世田谷区おじさんです！',
+    holiday: '三軒茶屋でアートイベント参加。駒沢公園ラン＋ドッグカフェ。',
     color: '#81ECEC'
   },
   {
@@ -169,7 +185,8 @@ const members = [
     ward: '渋谷区',
     image: shibuyaImage,
     catchphrase: 'ティックもトックもおじさんリズム！若者気取りの渋谷区おじさんです！',
-    color: '#FAB1A0'
+    holiday: '渋谷のレコードショップ巡り。夜は毎晩クラブ通い',
+    color: '#FDCB6E'
   },
   {
     id: 'shinagawa',
@@ -177,6 +194,7 @@ const members = [
     ward: '品川区',
     image: shinagawaImage,
     catchphrase: '手を変え品変え　もつれた心をターミナル品川区おじさんです！',
+    holiday: '手を変え品変え　もつれた心をターミナル品川区おじさんです！',
     color: '#FF7675'
   },
   {
@@ -185,6 +203,7 @@ const members = [
     ward: '新宿区',
     image: shinjukuImage,
     catchphrase: 'ネオンが照らす俺のシワ、魅惑と疲労の二刀流、新宿区おじさんです！',
+    holiday: 'ミッドナイトジャズバー巡り。歌舞伎町の小劇場で舞台観劇。',
     color: '#FD79A8'
   },
   {
@@ -193,6 +212,7 @@ const members = [
     ward: '杉並区',
     image: suginamiImage,
     catchphrase: '花と気持ちを添えてアナタの心を咲かせたい杉並区おじさんです！',
+    holiday: '阿佐ヶ谷ジャズストリート参加。川沿い散歩',
     color: '#FDCB6E'
   },
   {
@@ -201,6 +221,7 @@ const members = [
     ward: '墨田区',
     image: sumidaImage,
     catchphrase: '夜空に咲いては散る命、オレは燃えるぜ一生涯！墨田区おじさんです！',
+    holiday: '隅田川テラスで手作りお弁当ピクニック。スカイツリー写真散歩。',
     color: '#E84393'
   },
   {
@@ -209,6 +230,7 @@ const members = [
     ward: '台東区',
     image: taitoImage,
     catchphrase: '涙の雨にゃ傘がいる。いつでも入んなアイてるぜ台東区おじさんです！',
+    holiday: '浅草着物散歩＆人力車で下町デート。',
     color: '#00B894'
   },
   {
@@ -217,9 +239,12 @@ const members = [
     ward: '豊島区',
     image: toshimaImage,
     catchphrase: 'いけないナイトに行け袋！イケてるトークでエスコート 豊島区おじさんです！',
+    holiday: 'サブカル映画鑑賞。池袋の隠れ家イタリアンでディナー。',
     color: '#6C5CE7'
   }
+
 ];
+
 
 const newsItems = [
   {
@@ -394,6 +419,18 @@ function App() {
                   <p className="text-sm text-gray-300 max-w-2xl mx-auto mb-8">
                     {selectedMember.catchphrase}
                   </p>
+                                  <div className="mt-6">
+                  <h4 className="text-pink-400 font-bold text-sm mb-3 flex items-center justify-center">
+                    <span className="mr-2">🫶</span>
+                    休日の過ごし方
+                  </h4>
+                  <div className="bg-gradient-to-r from-pink-500/10 to-purple-500/10 p-4 rounded-lg">
+                    <p className="text-gray-300 text-sm leading-relaxed text-center">
+                      {selectedMember.holiday}
+                    </p>
+                  </div>
+                </div>
+
                 </div>
               </div>
             </CardContent>
