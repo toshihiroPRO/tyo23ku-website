@@ -50,33 +50,6 @@
   box-shadow: 0 10px 25px rgba(6, 182, 212, 0.3);
 }
 
-.member-card-updated {
-  background: #D3D3D3;
-  backdrop-filter: blur(10px);
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
-  background-clip: padding-box;
-  position: relative;
-}
-
-.member-card-updated::before {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: linear-gradient(45deg, #ff0000, #ff8000, #ffff00, #00ff00, #0080ff, #8000ff, #ff0000);
-  border-radius: inherit;
-  z-index: -1;
-  animation: rainbow 3s linear infinite;
-}
-
-.member-card-updated:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(211, 211, 211, 0.3);
-}
-
 /* Video background styling */
 video {
   filter: brightness(0.7) contrast(1.2);
@@ -106,16 +79,7 @@ video {
     font-size: 2.5rem;
   }
   
-  .member-card, .member-card-updated {
+  .member-card {
     margin-bottom: 1rem;
   }
-}
-
-/* Ensure proper text contrast on light background */
-.member-card-updated h3 {
-  color: #000000 !important;
-}
-
-.member-card-updated p {
-  color: #6A6A6A !important;
 }
