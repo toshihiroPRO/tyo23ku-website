@@ -34,6 +34,7 @@ import sumidaImage from './assets/SUMIDA.png';
 import taitoImage from './assets/TAITO.png';
 import toshimaImage from './assets/TOSHIMA.png';
 
+
 const members = [
   {
     id: 'adachi',
@@ -44,7 +45,8 @@ const members = [
     holiday: '荒川河川敷でスクワット。長時間ダンスの体力作り。',
     color: '#FF6B6B'
   },
-  {
+
+     {
     id: 'arakawa',
     name: '荒川区おじさん',
     ward: '荒川区',
@@ -242,31 +244,29 @@ const members = [
     holiday: 'サブカル映画鑑賞。池袋の隠れ家イタリアンでディナー。',
     color: '#6C5CE7'
   }
-
 ];
-
 
 const newsItems = [
   {
     id: 1,
-    category: 'ライブ',
-    title: '東京ドーム デビューライブ',
-    date: '2025.08.15',
-    description: '記念すべきデビューライブを東京ドームで開催決定！'
+    category: '個人活動',
+    title: '港区おじさん 初のソロ写真集発売決定',
+    date: '2025.08.18',
+    description: '港区の夜景をバックにした大人の魅力満載の写真集が発売決定！'
   },
   {
     id: 2,
-    category: 'TV出演',
-    title: '朝子 in 渋谷区',
-    date: '2025.08.20',
-    description: 'ミュージックステーション出演決定！'
+    category: '個人活動',
+    title: '渋谷区おじさん ラジオ番組レギュラー出演',
+    date: '2025.08.22',
+    description: '毎週金曜深夜「渋谷おじさんのミッドナイトトーク」がスタート！'
   },
   {
     id: 3,
-    category: 'イベント',
-    title: 'ミュージックステーション出演',
-    date: '2025.08.25',
-    description: 'ミュージックステーション出演決定！'
+    category: '個人活動',
+    title: '文京区おじさん 書評コラム連載開始',
+    date: '2025.08.28',
+    description: '月刊文芸誌にて「おじさんが読む現代文学」の連載がスタート！'
   }
 ];
 
@@ -371,7 +371,7 @@ function App() {
             {members.map((member) => (
               <Card
                 key={member.id}
-                className="member-card cursor-pointer border-cyan-500/30"
+                className="member-card-updated cursor-pointer border-cyan-500/30"
                 onClick={() => setSelectedMember(member)}
               >
                 <CardContent className="p-4">
@@ -381,7 +381,7 @@ function App() {
                     className="w-full h-32 object-cover rounded-lg mb-3"
                   />
                   <h3 className="text-black font-bold text-sm text-center">{member.ward}</h3>
-                  <p className="text-gray-600 text-xs text-center">{member.name}</p>
+                  <p className="text-gray-500 text-xs text-center">{member.name}</p>
                 </CardContent>
               </Card>
             ))}
@@ -419,24 +419,24 @@ function App() {
                   <p className="text-sm text-gray-300 max-w-2xl mx-auto mb-8">
                     {selectedMember.catchphrase}
                   </p>
-                                  <div className="mt-6">
-                  <h4 className="text-pink-400 font-bold text-sm mb-3 flex items-center justify-center">
-                    <span className="mr-2">🫶</span>
-                    休日の過ごし方
-                  </h4>
-                  <div className="bg-gradient-to-r from-pink-500/10 to-purple-500/10 p-4 rounded-lg">
-                    <p className="text-gray-300 text-sm leading-relaxed text-center">
-                      {selectedMember.holiday}
-                    </p>
+                  <div className="mt-6">
+                    <h4 className="text-pink-400 font-bold text-sm mb-3 flex items-center justify-center">
+                      <span className="mr-2">🫶</span>
+                      休日の過ごし方
+                    </h4>
+                    <div className="bg-gradient-to-r from-pink-500/10 to-purple-500/10 p-4 rounded-lg">
+                      <p className="text-gray-300 text-sm leading-relaxed text-center">
+                        {selectedMember.holiday}
+                      </p>
+                    </div>
                   </div>
-                </div>
-
                 </div>
               </div>
             </CardContent>
           </Card>
         </div>
       )}
+
       {/* Schedule Section */}
       <section id="schedule" className="py-16 bg-black/50">
         <div className="container mx-auto px-4">
@@ -456,7 +456,7 @@ function App() {
                     <Heart className="text-pink-400" />
                     <div>
                       <h3 className="text-white font-bold">2025.08.20</h3>
-                      <p className="text-gray-300">朝子 in 渋谷区</p>
+                      <p className="text-gray-300">握手会 in 渋谷LIQUIDROOM</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4 p-4 bg-purple-500/10 rounded-lg">
@@ -473,29 +473,72 @@ function App() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-black/90 border-t border-cyan-500/30 py-8">
-        <div className="container mx-auto px-4 text-center">
-          <div className="flex justify-center space-x-4 p-4 bg-cyan-500/10 rounded-lg">
-            <a href="https://www.instagram.com/tokyo23ku_ojisan" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition-colors">
-              <Instagram size={24} />
-            </a>
-            <a href="https://www.tiktok.com/@miguel_187" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition-colors">
-              <Music size={24} />
-            </a>
-            <a href="https://www.threads.com/@tokyo23ku_ojisan?invite=0" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition-colors">
-              <MessageSquare size={24} />
-            </a>
-          </div>
-          <div className="mt-6">
-            <p className="text-gray-400 mb-4">このサイトは架空設定を楽しむサイトです。『東京23区おじさん』メンバーは全て現実には存在しません。</p>
-            <p className="text-gray-400 text-sm">© ChantoGPT / ToshiPro All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+      {/* Goods Section */}
+      <section id="goods" className="py-16">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center text-white neon-text mb-12">グッズ</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Card className="member-card border-cyan-500/30">
+              <CardContent className="p-6">
+                <div className="bg-gradient-to-br from-cyan-500/20 to-pink-500/20 h-48 rounded-lg mb-4 flex items-center justify-center">
+                  <span className="text-4xl">👕</span>
+                </div>
+                <h3 className="text-white font-bold mb-2">オフィシャルTシャツ</h3>
+                <p className="text-gray-300 text-sm mb-4">各区おじさんデザインのオリジナルTシャツ</p>
+                <p className="text-cyan-400 font-bold">¥3,500</p>
+              </CardContent>
+            </Card>
+            <Card className="member-card border-cyan-500/30">
+              <CardContent className="p-6">
+                <div className="bg-gradient-to-br from-pink-500/20 to-purple-500/20 h-48 rounded-lg mb-4 flex items-center justify-center">
+                  <span className="text-4xl">📱</span>
+                </div>
+                <h3 className="text-white font-bold mb-2">スマホケース</h3>
+                <p className="text-gray-300 text-sm mb-4">推しおじさんと一緒にお出かけ</p>
+                <p className="text-cyan-400 font-bold">¥2,800</p>
+              </CardContent>
+            </Card>
+            <Card className="member-card border-cyan-500/30">
+              <CardContent className="p-6">
+                <div className="bg-gradient-to-br from-purple-500/20 to-cyan-500/20 h-48 rounded-lg mb-4 flex items-center justify-center">
+                  <span className="text-4xl">🎵</span>
+                </div>
+                <h3 className="text-white font-bold mb-2">デビューアルバム</h3>
+                <p className="text-gray-300 text-sm mb-4">全23曲収録の記念すべき1stアルバム</p>
+                <p className="text-cyan-400 font-bold">¥2,500</p>
+              </CardContent>
+
+                      </Card>
+      </div>
     </div>
-  );
+  </section>
+
+  {/* Footer */}
+  <footer className="py-8 bg-black/80 border-t border-cyan-500/30">
+    <div className="container mx-auto px-4 text-center">
+      <div className="flex justify-center space-x-6 mb-4">
+        <a href="#" className="text-cyan-400 hover:text-cyan-300 transition-colors">
+          <Instagram size={24} />
+        </a>
+        <a href="#" className="text-cyan-400 hover:text-cyan-300 transition-colors">
+          <MessageSquare size={24} />
+        </a>
+        <a href="#" className="text-cyan-400 hover:text-cyan-300 transition-colors">
+          <Music size={24} />
+        </a>
+      </div>
+      <p className="text-gray-400 text-sm">
+        人間が考えて書き✍️AIが描いた🎨  
+
+        東京23区🗼に居そうで絶対いない『東京23区おじさん』たち
+      </p>
+      <p className="text-gray-500 text-xs mt-4">
+        © 2025 TYO23Ku. All rights reserved.
+      </p>
+    </div>
+  </footer>
+</div>
+);
 }
 
 export default App;
-
