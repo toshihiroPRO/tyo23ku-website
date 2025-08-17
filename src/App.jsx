@@ -140,7 +140,7 @@ const members = [
     ward: '港区',
     image: minatoImage,
     catchphrase: '甘い泡と淡い恋あまねくキミにも飲ませたい港区おじさんです！',
-    holiday: '夜景クルーズ＆シャンパン。夜は BARのGENIE通い。',
+    holiday: '夜景クルーズ＆シャンパン。夜は伝説のBAR、GENIE通い。',
     color: '#FD79A8'
   },
   {
@@ -185,7 +185,7 @@ const members = [
     ward: '渋谷区',
     image: shibuyaImage,
     catchphrase: 'ティックもトックもおじさんリズム！若者気取りの渋谷区おじさんです！',
-    holiday: '渋谷のレコードショップ巡り。夜は毎晩クラブ通い',
+    holiday: 'レコードショップ巡り。夜はクラブ通い、推しクラブはATOM TOKYO',
     color: '#FDCB6E'
   },
   {
@@ -203,7 +203,7 @@ const members = [
     ward: '新宿区',
     image: shinjukuImage,
     catchphrase: 'ネオンが照らす俺のシワ、魅惑と疲労の二刀流、新宿区おじさんです！',
-    holiday: 'ミッドナイトジャズバー巡り。歌舞伎町の小劇場で舞台観劇。',
+    holiday: 'ジャズバー巡り。サンモールスタジオで舞台観劇。最近ルビンノツボ「女の子になりたい？」に感動',
     color: '#FD79A8'
   },
   {
@@ -212,7 +212,7 @@ const members = [
     ward: '杉並区',
     image: suginamiImage,
     catchphrase: '花と気持ちを添えてアナタの心を咲かせたい杉並区おじさんです！',
-    holiday: '阿佐ヶ谷ジャズストリート参加。川沿い散歩',
+    holiday: '阿佐ヶ谷ジャズストリート参加。善福寺川ほとりの散歩',
     color: '#FDCB6E'
   },
   {
