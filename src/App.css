@@ -154,7 +154,7 @@ color: var(--foreground, #fff);
 }
 .member-card,
 .member-card * {
-  color: var(--foreground, #fff) !important;
+  color: var(--foreground, #fff) ;
 }
 .member-card::before {
   content: '';
