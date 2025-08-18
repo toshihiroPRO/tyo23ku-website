@@ -152,7 +152,10 @@
   --foreground: #fff;
 color: var(--foreground, #fff);
 }
-
+.member-card,
+.member-card * {
+  color: var(--foreground, #fff) !important;
+}
 .member-card::before {
   content: '';
   position: absolute;
