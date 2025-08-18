@@ -149,7 +149,7 @@
   border: 1px solid rgba(255, 215, 0, 0.4);
   position: relative;
   overflow: hidden;
-  --foreground: oklch(0.985 0 0);
+  --foreground: #fff;
   color: var(--foreground);
 }
 
