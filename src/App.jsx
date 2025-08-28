@@ -249,22 +249,22 @@ const members = [
 const newsItems = [
   {
     id: 1,
-    category: 'ライブ',
-    title: '東京ドーム デビューライブ',
+    category: 'TV出演',
+    title: '文京区おじさん、文京ブラトークに出演決定！',
     date: '2025.08.15',
     description: '記念すべきデビューライブを東京ドームで開催決定！'
   },
   {
     id: 2,
-    category: 'TV出演',
-    title: '朝子 in 渋谷区',
-    date: '2025.08.20',
+    category: 'イベント',
+    title: '渋谷区おじさんソロデビュー記念DJイベント in 渋谷区',
+    date: '2025.09.20',
     description: 'ミュージックステーション出演決定！'
   },
   {
     id: 3,
-    category: 'イベント',
-    title: 'ミュージックステーション出演',
+    category: 'ラジオ出演',
+    title: '港区おじさんプロデュースのオリシャン発売記念！シャンパンのかっこいい頼み方講座',
     date: '2025.08.25',
     description: 'ミュージックステーション出演決定！'
   }
@@ -456,7 +456,7 @@ function App() {
                     <Heart className="text-pink-400" />
                     <div>
                       <h3 className="text-white font-bold">2025.08.20</h3>
-                      <p className="text-gray-300">朝子 in 渋谷区</p>
+                      <p className="text-gray-300">花火大会ゲスト in 隅田区</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4 p-4 bg-purple-500/10 rounded-lg">
