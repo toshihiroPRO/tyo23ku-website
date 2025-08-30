@@ -4,8 +4,7 @@ import { Button } from './components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './components/ui/card';
 import { Badge } from './components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './components/ui/tabs';
-import { Star, Heart, MapPin, Calendar, Users, Music, Instagram, MessageSquare } from 'lucide-react';
-);
+import { Star, Heart, MapPin, Calendar, Users, Music, MessageSquare } from 'lucide-react';
 // Import images and video
 import tiktokIcon from './assets/tiktok-icon.png';
 import instagramIcon from './assets/instagram-icon.png';
@@ -486,7 +485,7 @@ function App() {
             <a href="https://www.tiktok.com/@miguel_187c" target="_blank" rel="noopener noreferrer" className="social-icon tiktok-icon">
               <img src={tiktokIcon} alt="TikTok" className="w-6 h-6" />
             </a>
-            <a href="https://www.threads.com/@tokyo23ku_ojisan?invite=0" target="_blank" rel="noopener noreferrer" className="social-icon threads-icon">
+            <a href="https://www.threads.net/@tokyo23ku_ojisan?invite=0" target="_blank" rel="noopener noreferrer" className="social-icon threads-icon">
               <img src={threadsIcon} alt="Threads" className="w-6 h-6" />
             </a>
             <a href="https://line.me/S/sticker/31441885" target="_blank" rel="noopener noreferrer" className="social-icon line-icon">
