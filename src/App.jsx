@@ -364,6 +364,7 @@ function App() {
             ))}
           </div>
         </div>
+      </div>
       </section>
 
       {/* Members Section */}
