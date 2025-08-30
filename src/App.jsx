@@ -495,10 +495,8 @@ function App() {
           <div className="mt-6">
             <p className="text-gray-400 mb-4">このサイトは架空設定を楽しむサイトです。『東京23区おじさん』メンバーは全て現実には存在しません。</p>
             <p className="text-gray-400 text-sm">© ChantoGPT / ToshiPro All rights reserved.</p>
-        </div>
-      </div>
+          </div>
     </footer>
-  </div>
   );
 }
 
