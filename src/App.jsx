@@ -5,7 +5,24 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './com
 import { Badge } from './components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './components/ui/tabs';
 import { Star, Heart, MapPin, Calendar, Users, Music, Instagram, MessageSquare } from 'lucide-react';
+// カスタムSVGアイコンコンポーネント
+const TikTokIcon = ({ size = 24 }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+  </svg>
+);
 
+const LineIcon = ({ size = 24 }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
+    <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771z"/>
+  </svg>
+);
+
+const ThreadsIcon = ({ size = 24 }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
+    <text x="12" y="16" textAnchor="middle" fontSize="16" fontWeight="bold">@</text>
+  </svg>
+);
 // Import images and video
 import logoImage from './assets/TOKYO23Ku_LOGO.png';
 import newLogoImage from './assets/TOKYO23Ku_LOGO_NEW.png';
@@ -476,16 +493,20 @@ function App() {
       {/* Footer */}
       <footer className="bg-black/90 border-t border-cyan-500/30 py-8">
         <div className="container mx-auto px-4 text-center">
-          <div className="flex justify-center space-x-4 p-4 bg-cyan-500/10 rounded-lg">
-            <a href="https://www.instagram.com/tokyo23ku_ojisan" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition-colors">
-              <Instagram size={24} />
-            </a>
-            <a href="https://www.tiktok.com/@miguel_187" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition-colors">
-              <Music size={24} />
-            </a>
-            <a href="https://www.threads.com/@tokyo23ku_ojisan?invite=0" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition-colors">
-              <MessageSquare size={24} />
-            </a>
+          <div className="flex justify-center space-x-6 mb-6">
+  <a href="https://www.instagram.com/tokyo23ku_ojisan" target="_blank" rel="noopener noreferrer" className="social-icon instagram-icon">
+    <Instagram size={24} />
+  </a>
+  <a href="https://www.tiktok.com/@miguel_187c" target="_blank" rel="noopener noreferrer" className="social-icon tiktok-icon">
+    <TikTokIcon size={24} />
+  </a>
+  <a href="https://www.threads.com/@tokyo23ku_ojisan?invite=0" target="_blank" rel="noopener noreferrer" className="social-icon threads-icon">
+    <ThreadsIcon size={24} />
+  </a>
+  <a href="https://line.me/S/sticker/31441885" target="_blank" rel="noopener noreferrer" className="social-icon line-icon">
+    <LineIcon size={24} />
+  </a>
+</div>
           </div>
           <div className="mt-6">
             <p className="text-gray-400 mb-4">このサイトは架空設定を楽しむサイトです。『東京23区おじさん』メンバーは全て現実には存在しません。</p>
