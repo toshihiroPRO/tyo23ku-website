@@ -363,9 +363,9 @@ function App() {
               </Card>
             ))}
           </div>
-        </div>
-      </div>
-      </section>
+        </div>   {/* grid を閉じる */}
+     </div>   {/* container を閉じる */}
+  </section>
 
       {/* Members Section */}
       <section id="members" className="py-16">
