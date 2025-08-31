@@ -363,9 +363,9 @@ function App() {
               </Card>
             ))}
           </div>
-        </div>   {/* grid を閉じる */}
-     </div>   {/* container を閉じる */}
-  </section>
+        </div>
+      </section>
+
 
       {/* Members Section */}
       <section id="members" className="py-16">
@@ -479,6 +479,7 @@ function App() {
 
       {/* Footer */}
       <footer className="bg-black/90 border-t border-cyan-500/30 py-8">
+        <div className="container mx-auto px-4 text-center">
           <div className="flex justify-center space-x-6 mb-6">
             <a href="https://www.instagram.com/tokyo23ku_ojisan" target="_blank" rel="noopener noreferrer" className="social-icon instagram-icon">
               <img src={instagramIcon} alt="Instagram" className="w-6 h-6" />
@@ -486,7 +487,7 @@ function App() {
             <a href="https://www.tiktok.com/@miguel_187c" target="_blank" rel="noopener noreferrer" className="social-icon tiktok-icon">
               <img src={tiktokIcon} alt="TikTok" className="w-6 h-6" />
             </a>
-            <a href="https://www.threads.net/@tokyo23ku_ojisan?invite=0" target="_blank" rel="noopener noreferrer" className="social-icon threads-icon">
+            <a href="https://www.threads.com/@tokyo23ku_ojisan?invite=0" target="_blank" rel="noopener noreferrer" className="social-icon threads-icon">
               <img src={threadsIcon} alt="Threads" className="w-6 h-6" />
             </a>
             <a href="https://line.me/S/sticker/31441885" target="_blank" rel="noopener noreferrer" className="social-icon line-icon">
@@ -497,7 +498,8 @@ function App() {
             <p className="text-gray-400 mb-4">このサイトは架空設定を楽しむサイトです。『東京23区おじさん』メンバーは全て現実には存在しません。</p>
             <p className="text-gray-400 text-sm">© ChantoGPT / ToshiPro All rights reserved.</p>
           </div>
-    </footer>
+        </div>
+      </footer>
   );
 }
 
