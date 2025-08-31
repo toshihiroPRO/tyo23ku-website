@@ -482,16 +482,16 @@ function App() {
         <div className="container mx-auto px-4 text-center">
           <div className="flex justify-center space-x-6 mb-6">
             <a href="https://www.instagram.com/tokyo23ku_ojisan" target="_blank" rel="noopener noreferrer" className="social-icon instagram-icon">
-              <img src={instagramIcon} alt="Instagram" className="w-6 h-6" />
+              <img src={instagramIcon} alt="Instagram" className="icon-img" />
             </a>
             <a href="https://www.tiktok.com/@miguel_187c" target="_blank" rel="noopener noreferrer" className="social-icon tiktok-icon">
-              <img src={tiktokIcon} alt="TikTok" className="w-6 h-6" />
+              <img src={tiktokIcon} alt="TikTok" className="icon-img" />
             </a>
             <a href="https://www.threads.com/@tokyo23ku_ojisan?invite=0" target="_blank" rel="noopener noreferrer" className="social-icon threads-icon">
-              <img src={threadsIcon} alt="Threads" className="w-6 h-6" />
+              <img src={threadsIcon} alt="Threads" className="icon-img" />
             </a>
             <a href="https://line.me/S/sticker/31441885" target="_blank" rel="noopener noreferrer" className="social-icon line-icon">
-              <img src={lineIcon} alt="LINE" className="w-6 h-6" />
+              <img src={lineIcon} alt="LINE" className="icon-img" />
             </a>
           </div>
           <div className="mt-6">
