@@ -228,9 +228,9 @@ color: var(--foreground, #fff);
   justify-content: center;
   width: 48px;
   height: 48px;
-  border-radius: 12px;
-  background: #000000;
-  border: 2px solid #E0E0E0;
+  border-radius: 12px;    /* ← 角丸はクリック範囲用。見た目はPNG依存 */
+  background: none !important;  /* 背景削除 */
+  border: none !important;      /* 枠削除 */
   transition: all 0.3s ease;
   text-decoration: none;
 }
@@ -240,26 +240,38 @@ color: var(--foreground, #fff);
   box-shadow: 0 8px 16px rgba(224, 224, 224, 0.3);
 }
 
-/* Instagram - グラデーション */
+/* Instagram */
 .instagram-icon {
-  background: linear-gradient(45deg, #E4405F, #833AB4);
-  color: white;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
-/* TikTok - 黒と赤 */
+/* TikTok */
 .tiktok-icon {
-  background: linear-gradient(45deg, #000000 50%, #FF0050 50%);
-  color: white;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
 }
 
-/* Threads - 黒背景、白@マーク */
+/* Threads */
 .threads-icon {
-  background: #000000;
-  color: #FFFFFF;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
-/* LINE - 緑背景、白ロゴ */
+/* LINE */
 .line-icon {
-  background: #00C300;
-  color: white;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+/* アイコン画像を箱いっぱいに表示 */
+.icon-img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;  /* 縦横比を保って収める */
+  display: block;
 }
