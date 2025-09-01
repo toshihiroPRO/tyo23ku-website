@@ -253,7 +253,6 @@ color: var(--foreground, #fff);
   border: none !important;
   box-shadow: none !important;
 }
-}
 
 /* Threads */
 .threads-icon {
